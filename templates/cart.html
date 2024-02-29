@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/cart.css') }}">
+    <script defer src="{{ url_for('static', filename='js/cart.js') }}"></script>
+    <script defer src="{{ url_for('static', filename='js/cardProcessing.js') }}"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body id="body">
+    <header>
+        <button id="buy">ОПЛАТИТЬ</button>
+        <div>
+            <p class="item" id="itemP">{{ item }} предметов</p>
+            <p class="price" id="priceP">{{ value }} руб к оплате</p>
+        </div>
+    </header>
+
+    {% if purchases: %}
+        <div class="cards" id="cards">
+            {% for el in purchases %}
+            <form class="card" method="post">
+                <input type="text" class="none" name="name" value="{{ el.name }}">
+                <input type="text" class="none" name="title" value="{{ el.title }}">
+                <input type="number" class="none" name="price" value="{{ el.price }}">
+                <input type="text" class="none" name="img" value="{{ el.img }}">
+                <img src="{{ el.img }}" alt="">
+                <p class="title">
+                    {{ el.title }}<br>
+                    {{ el.price }} руб
+                </p>
+                <div class="count">
+                    <button type="submit" value="minus" name="action">-</button>
+                    <p class="out">{{ el.count }}</p>
+                    <button type="submit" value="plus" name="action">+</button>
+                </div>
+                <button class="buy" type="submit" value="del" name="action">УДАЛИТЬ</button>
+            </form>
+            {% endfor %}
+        </div>
+    {% else %}
+        <div class="emptyBody" id="empty">
+            <p>вы пока ничего не выбрали</p>
+            <p>перейдите в каталог</p>
+            <a href="/galary">В КАТАЛОГ</a>
+        </div>
+    {% endif %}
+
+    <div class="leaves">
+        <img src="{{ url_for('static', filename='img/leaves/leave1.svg') }}" alt="" class="left leave leave1">
+        <img src="{{ url_for('static', filename='img/leaves/leave6.svg') }}" alt="" class="left leave leave2">
+        <img src="{{ url_for('static', filename='img/leaves/leave4.svg') }}" alt="" class="left leave leave3">
+        <img src="{{ url_for('static', filename='img/leaves/leave3.svg') }}" alt="" class="left leave leave4">
+        <img src="{{ url_for('static', filename='img/leaves/leave5.svg') }}" alt="" class="left leave leave5">
+        
+        <img src="{{ url_for('static', filename='img/leaves/leave4.svg') }}" alt="" class="right leave leave6">
+        <img src="{{ url_for('static', filename='img/leaves/leave2.svg') }}" alt="" class="right leave leave7">
+        <img src="{{ url_for('static', filename='img/leaves/leave1.svg') }}" alt="" class="right leave leave8">
+        <img src="{{ url_for('static', filename='img/leaves/leave6.svg') }}" alt="" class="right leave leave9">
+        <img src="{{ url_for('static', filename='img/leaves/leave3.svg') }}" alt="" class="right leave leave10">
+    </div>
+
+    <footer>
+        <a href="/home"><img src="{{ url_for('static', filename='img/bar/home.svg') }}" alt=""></a>
+        <a href="/galary"><img src="{{ url_for('static', filename='img/bar/galary.svg') }}" alt=""></a>
+        <a href="/services"><img src="{{ url_for('static', filename='img/bar/services.svg') }}" alt=""></a>
+        <a href="/cart"><img src="{{ url_for('static', filename='img/bar/cart-active.svg') }}" alt=""></a>
+    </footer>
+</body>
+</html>

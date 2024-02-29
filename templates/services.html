@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/services.css') }}">
+</head>
+<body>
+    <header>
+        <p>УСЛУГИ</p>
+    </header>
+
+    <div class="cards">
+        <div class="card">
+            <div class="header">
+                <img src="{{ url_for('static', filename='img/services/clear.png') }}" alt="">
+                <div>
+                    <p>ЧИСТКА<br>АКВАРИУМА</p>
+                    <a href="/clear">подробнее</a>
+                </div>
+            </div>
+            <p class="info">
+                Мы осуществляем чистку аквариума как разово, так и на постоянной основе. 
+                Выполняем полное обслуживание аквариумов. 
+                На постоянной основе восстанавливаем погибших рыбок мелкого и среднего размера.
+            </p>
+        </div>
+        <div class="card">
+            <div class="header">
+                <img src="{{ url_for('static', filename='img/services/go.png') }}" alt="">
+                <div>
+                    <p>ЗАПУСК И<br>ПЕРЕЗАУСК<br>АКВАРИУМА</p>
+                    <a href="">подробнее</a>
+                </div>
+            </div>
+            <p class="info">
+                Наш магазин Телескоп Аквариум занимается запуском нового аквариума и перезапуском имеющегося аквариума. 
+                В практике содержания декоративных рыбок хотя бы раз наступал момент, когда требовалось запустить или перезапустить аквариум. 
+                Это может подтвердить едва ли не каждый аквариумист. 
+                Причины бывают различные, и сама операция по остановке и повторному запуску…
+            </p>
+        </div>
+        <div class="card">
+            <div class="header">
+                <img src="{{ url_for('static', filename='img/services/art.png') }}" alt="">
+                <div>
+                    <p>ОФОРМЛЕНИЕ<br>АКВАРИУМА</p>
+                    <a href="">подробнее</a>
+                </div>
+            </div>
+            <p class="info">
+                Наш интернет-магазин "Телескоп-Аквариум» занимается профессиональным оформлением аквариумов. 
+                Мы предлагает Вам заказать у нас оформление аквариума по приемлемым ценам, мы создает не только красивое оформление и дизайн вашего аквариума, но и ПРАВИЛЬНУЮ среду обитания для рыбок. 
+                Для Вас красота, для рыб комфортное проживание.
+            </p>
+        </div>
+    </div>
+
+    <div class="leaves">
+        <img src="{{ url_for('static', filename='img/leaves/leave1.svg') }}" alt="" class="left leave leave1">
+        <img src="{{ url_for('static', filename='img/leaves/leave5.svg') }}" alt="" class="left leave leave2">
+        <img src="{{ url_for('static', filename='img/leaves/leave6.svg') }}" alt="" class="left leave leave3">
+        <img src="{{ url_for('static', filename='img/leaves/leave3.svg') }}" alt="" class="left leave leave4">
+        <img src="{{ url_for('static', filename='img/leaves/leave4.svg') }}" alt="" class="left leave leave5">
+
+        <img src="{{ url_for('static', filename='img/leaves/leave1.svg') }}" alt="" class="right leave leave6">
+        <img src="{{ url_for('static', filename='img/leaves/leave4.svg') }}" alt="" class="right leave leave7">
+        <img src="{{ url_for('static', filename='img/leaves/leave2.svg') }}" alt="" class="right leave leave8">
+        <img src="{{ url_for('static', filename='img/leaves/leave6.svg') }}" alt="" class="right leave leave9">
+        <img src="{{ url_for('static', filename='img/leaves/leave3.svg') }}" alt="" class="right leave leave10">
+    </div>
+    
+    <footer>
+        <a href="/home"><img src="{{ url_for('static', filename='img/bar/home.svg') }}" alt=""></a>
+        <a href="/galary"><img src="{{ url_for('static', filename='img/bar/galary.svg') }}" alt=""></a>
+        <a href="/services"><img src="{{ url_for('static', filename='img/bar/services-active.svg') }}" alt=""></a>
+        <a href="/cart"><img src="{{ url_for('static', filename='img/bar/cart.svg') }}" alt=""></a>
+    </footer>
+</body>
+</html>

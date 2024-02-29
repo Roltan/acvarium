@@ -1,0 +1,152 @@
+@font-face {
+  font-family: Inter;
+  src: url(../fount/Inter/Inter-Regular.otf);
+}
+body {
+  height: 100svh;
+  margin: 0;
+  background: #EDF5F9;
+  font-family: Inter;
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+}
+
+button {
+  border: none;
+  background: none;
+}
+
+.leaves .left {
+  left: 0px;
+}
+.leaves .right {
+  right: 0px;
+  transform: scale(-1, 1);
+}
+.leaves .leave {
+  position: fixed;
+  z-index: 3;
+}
+
+.none {
+  display: none;
+}
+
+footer {
+  position: fixed;
+  bottom: -2px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+  height: 85px;
+  box-sizing: border-box;
+  padding: 12px 30px 9px;
+  border-top: 1px solid #446D91;
+  background: #68A7DD;
+}
+
+.leaves .leave1 {
+  top: 104px;
+}
+.leaves .leave2 {
+  top: 202px;
+}
+.leaves .leave3 {
+  top: 292px;
+}
+.leaves .leave4 {
+  top: 431px;
+}
+.leaves .leave5 {
+  top: 581px;
+}
+.leaves .leave6 {
+  top: 130px;
+}
+.leaves .leave7 {
+  top: 253px;
+}
+.leaves .leave8 {
+  top: 431px;
+}
+.leaves .leave9 {
+  top: 537px;
+}
+.leaves .leave10 {
+  top: 660px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  background: #EDF5F9;
+  width: 100%;
+  height: 79px;
+  padding: 0 35px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: end;
+  z-index: 2;
+}
+header p {
+  color: #446D91;
+  font-size: 36px;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 89px 36px;
+}
+.cards .card {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 5px;
+  background: #68A7DD;
+  border-radius: 10px;
+}
+.cards .card .header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.cards .card .header img {
+  width: 150px;
+}
+.cards .card .header div {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 20px;
+}
+.cards .card .header div p {
+  color: #446D91;
+  text-align: right;
+  font-size: 20px;
+}
+.cards .card .header div a {
+  padding: 1px 12px;
+  color: #446D91;
+  font-size: 20px;
+  font-weight: 700;
+  border-radius: 15px;
+  border: 3px solid #446D91;
+  background: #85DE68;
+}
+.cards .card .info {
+  color: #85DE68;
+  font-size: 20px;
+}/*# sourceMappingURL=services.css.map */

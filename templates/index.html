@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/load.css') }}">
+    <script defer src="{{ url_for('static', filename='js/loading.js') }}"></script>
+</head>
+<body>
+    <div class="heading">
+        <div class="grid">
+            <img src="{{ url_for('static', filename='img/load/logo.png') }}" alt="" class="logo">
+            <div>
+                <img src="{{ url_for('static', filename='img/load/heading.svg') }}" alt="">
+                <img src="{{ url_for('static', filename='img/load/title.svg') }}" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="bools">
+        <div class="bool" id="bool1"></div>
+        <div class="bool" id="bool2"></div>
+        <div class="bool" id="bool3"></div>
+        <div class="bool" id="bool4"></div>
+        <div class="bool" id="bool5"></div>
+        <div class="bool" id="bool6"></div>
+        <div class="bool" id="bool7"></div>
+        <div class="bool" id="bool8"></div>
+        <div class="bool" id="bool9"></div>
+        <div class="bool" id="bool10"></div>
+    </div>
+
+    <img src="{{ url_for('static', filename='img/load/wave.png') }}" alt="" class="wave">
+</body>
+</html>

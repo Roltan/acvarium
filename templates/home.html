@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+    <script defer src="{{ url_for('static', filename='js/sale.js') }}"></script>
+    <script defer src="{{ url_for('static', filename='js/cardProcessing.js') }}"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <header>
+        <div>
+            <div class="heading">
+                <div class="grid">
+                    <img src="{{ url_for('static', filename='img/load/logo.png') }}" alt="" class="logo">
+                    <div>
+                        <img src="{{ url_for('static', filename='img/load/heading.svg') }}" alt="">
+                        <img src="{{ url_for('static', filename='img/load/title.svg') }}" alt="">
+                    </div>
+                </div>
+            </div>
+            <img src="{{ url_for('static', filename='img/home/sale.svg') }}" alt="" id="saleIcon">
+            <div class="sale" id="sale">
+                <img src="{{ url_for('static', filename='img/home/sale-active.png') }}" alt="">
+                <p>
+                    10%<br>
+                    скидка
+                </p>
+            </div>
+        </div>
+        <p>Новинки и акции</p>
+        <div class="hr"></div>
+    </header>
+
+    <div class="cards">
+        <form class="card" method="post">
+            <input type="text" class="none" name="name" value="Апоногетон ульвацеус">
+            <input type="text" class="none" name="title" value="Апоногетон<br>ульвацеус">
+            <input type="number" class="none" name="price" value="3000">
+            <input type="text" class="none" name="img" value="/static/img/home/aponogekon.png">
+            <img src="{{ url_for('static', filename='img/home/aponogekon.png') }}" alt="">
+            <p>
+                Апоногетон<br>
+                ульвацеус<br>
+                3000 руб
+            </p>
+            <div class="count">
+                <button type="submit" value="minus" name="action">-</button>
+                <p class="out">{{ count[i] }}</p>
+                {% set i = i+1 %}
+                <button type="submit" value="plus" name="action">+</button>
+            </div>
+            <a class="buy" href="/cart">КУПИТЬ</a>
+        </form>
+        <form class="card" method="post">
+            <input type="text" class="none" name="name" value="Микрорасбора галактика Москва">
+            <input type="text" class="none" name="title" value="Микрорасбора<br>галактика<br>Москва">
+            <input type="number" class="none" name="price" value="150">
+            <input type="text" class="none" name="img" value="/static/img/home/galactica.png">
+            <img src="{{ url_for('static', filename='img/home/galactica.png') }}" alt="">
+            <p>
+                Микрорасбора<br>
+                галактика<br>
+                Москва<br>
+                150 руб
+            </p>
+            <div class="count">
+                <button type="submit" value="minus" name="action">-</button>
+                <p class="out">{{ count[i] }}</p>
+                {% set i = i+1 %}
+                <button type="submit" value="plus" name="action">+</button>
+            </div>
+            <a class="buy" href="/cart">КУПИТЬ</a>
+        </form>
+        <form class="card" method="post">
+            <input type="text" class="none" name="name" value="Данио салатовый">
+            <input type="text" class="none" name="title" value="Данио<br>салатовый">
+            <input type="number" class="none" name="price" value="30">
+            <input type="text" class="none" name="img" value="/static/img/home/danio.png">
+            <img src="{{ url_for('static', filename='img/home/danio.png') }}" alt="">
+            <p>
+                Данио<br>
+                салатовый<br>
+                30 руб
+            </p>
+            <div class="count">
+                <button type="submit" value="minus" name="action">-</button>
+                <p class="out">{{ count[i] }}</p>
+                {% set i = i+1 %}
+                <button type="submit" value="plus" name="action">+</button>
+            </div>
+            <a class="buy" href="/cart">КУПИТЬ</a>
+        </form>
+        <form class="card" method="post">
+            <input type="text" class="none" name="name" value="Барбус алый (Puntius ticto)">
+            <input type="text" class="none" name="title" value="Барбус алый<br>(Puntius ticto)">
+            <input type="number" class="none" name="price" value="250">
+            <input type="text" class="none" name="img" value="/static/img/home/barbus.png">
+            <img src="{{ url_for('static', filename='img/home/barbus.png') }}" alt="">
+            <p>
+                Барбус алый<br>
+                (Puntius ticto)<br>
+                250 руб
+            </p>
+            <div class="count">
+                <button type="submit" value="minus" name="action">-</button>
+                <p class="out">{{ count[i] }}</p>
+                {% set i = i+1 %}
+                <button type="submit" value="plus" name="action">+</button>
+            </div>
+            <a class="buy" href="/cart">КУПИТЬ</a>
+        </form>
+    </div>
+
+    <div class="leaves">
+        <img src="{{ url_for('static', filename='img/leaves/leave1.svg') }}" alt="" class="left leave leave1">
+        <img src="{{ url_for('static', filename='img/leaves/leave2.svg') }}" alt="" class="left leave leave2">
+        <img src="{{ url_for('static', filename='img/leaves/leave3.svg') }}" alt="" class="left leave leave3">
+        <img src="{{ url_for('static', filename='img/leaves/leave4.svg') }}" alt="" class="left leave leave4">
+
+        <img src="{{ url_for('static', filename='img/leaves/leave4.svg') }}" alt="" class="right leave leave5">
+        <img src="{{ url_for('static', filename='img/leaves/leave3.svg') }}" alt="" class="right leave leave6">
+        <img src="{{ url_for('static', filename='img/leaves/leave2.svg') }}" alt="" class="right leave leave7">
+        <img src="{{ url_for('static', filename='img/leaves/leave1.svg') }}" alt="" class="right leave leave8">
+    </div>
+
+    <footer>
+        <a href="/home"><img src="{{ url_for('static', filename='img/bar/home-active.svg') }}" alt=""></a>
+        <a href="/galary"><img src="{{ url_for('static', filename='img/bar/galary.svg') }}" alt=""></a>
+        <a href="/services"><img src="{{ url_for('static', filename='img/bar/services.svg') }}" alt=""></a>
+        <a href="/cart"><img src="{{ url_for('static', filename='img/bar/cart.svg') }}" alt=""></a>
+    </footer>
+</body>
+</html>

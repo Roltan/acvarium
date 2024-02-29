@@ -1,0 +1,66 @@
+@mixin cards($pading){
+    .cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        width: 100%;
+        box-sizing: border-box;
+        padding: $pading 35px;
+
+        .card{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            row-gap: 2px;
+            padding: 5px;
+            background: #68A7DD;
+            border-radius: 5px;
+            
+            .img{
+                width: 100%;
+                justify-self: center;
+            }
+            &>p{
+                width: 100%;
+                text-align: right;
+                color: #446D91;
+                font-size: 20px;
+            }
+            .count{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+
+                button{
+                    color: #85DE68;
+                    font-size: 20px;
+                    font-family: Inter;
+                    font-weight: 700;
+                }
+                p{
+                    padding: 0px 5px;
+                    border-radius: 5px;
+                    border: 1px solid #446D91;
+                    color: #85DE68;
+                    font-size: 20px;
+                }
+            }
+            .buy{
+                border-radius: 15px;
+                border: 3px solid #446D91;
+                background: #85DE68;
+
+                width: 80.64%;
+                justify-self: end;
+                text-align: center;
+
+                color: #446D91;
+                font-size: 20px;
+                font-family: Inter;
+                font-weight: 700;
+            }
+        }
+    }
+}

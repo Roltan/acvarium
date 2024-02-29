@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/clear.css') }}">
+</head>
+<body>
+    <header>
+        <p>ЧИСТКА АКВАРИУМА</p>
+    </header>
+
+    <main>
+        <p class="paragraf">
+            Мы осуществляем <i>чистку</i> аквариума как разово, так и на постоянной основе. 
+            Выполняем <i>полное обслуживание</i> аквариумов. 
+            На постоянной основе восстанавливаем погибших рыбок мелкого и среднего размера.
+        </p>
+        <p class="paragraf">
+            Каждый аквариум украшает ваш интерьер, для того, чтобы аквариум радовал вас и других людей, для этого <i>необходима чистка</i> аквариума, не всегда у Вас есть на это время, тем не менее Ваш аквариум Вас не ждет, стенки аквариума начинают зеленеть, грунт становится грязным, у рыб начинается стресс <i>от сюда и все болезни</i>. 
+            Для того, чтобы не доводить до всего этого, обслуживание аквариума необходимо <i>хотя бы один раз</i> в месяц. 
+            Также в аквариуме нужно делать подмену воды и в конце концов надо <i>менять воду</i>.
+        </p>
+        <p class="paragraf">
+            Цена на за разовый выезд 2500 рублей, при условии, что Ваш аквариум до 200 литров.<br>
+            Аквариум <i>200</i> л - <i>2500</i> рублей;<br>
+            Аквариум <i>300</i> л - <i>3500</i> рублей;<br>
+            Аквариум <i>до 500</i> л - <i>4000</i> рублей.<br>
+            Разовая чистка аквариума или постоянное обслуживание выбирать вам.
+        </p>
+        <p class="head">
+            Что входит в стоимость чистки аквариума???
+        </p>
+        <div class="img">
+            <img src="{{ url_for('static', filename='img/services/podmena.png') }}" alt="">
+            <img src="{{ url_for('static', filename='img/services/filter.png') }}" alt="">
+            <img src="{{ url_for('static', filename='img/services/chistka.png') }}" alt="">
+            <img src="{{ url_for('static', filename='img/services/sifonka.png') }}" alt="">
+        </div>
+        <div class="ul">
+            <ul>
+                <li>Осмотр рыб (больны они или нет)</li>
+                <li>Кондиционеры для воды обговариваются на месте!</li>
+                <li>При заказе ежемесячного обслуживания аквариума при заключении договора цена рассчитывается индивидуально.</li>
+            </ul>
+        </div>
+    </main>
+
+    <div class="leaves">
+        <img src="{{ url_for('static', filename='img/leaves/leave1.svg') }}" alt="" class="left leave leave1">
+        <img src="{{ url_for('static', filename='img/leaves/leave5.svg') }}" alt="" class="left leave leave2">
+        <img src="{{ url_for('static', filename='img/leaves/leave6.svg') }}" alt="" class="left leave leave3">
+        <img src="{{ url_for('static', filename='img/leaves/leave3.svg') }}" alt="" class="left leave leave4">
+        <img src="{{ url_for('static', filename='img/leaves/leave4.svg') }}" alt="" class="left leave leave5">
+
+        <img src="{{ url_for('static', filename='img/leaves/leave1.svg') }}" alt="" class="right leave leave6">
+        <img src="{{ url_for('static', filename='img/leaves/leave4.svg') }}" alt="" class="right leave leave7">
+        <img src="{{ url_for('static', filename='img/leaves/leave2.svg') }}" alt="" class="right leave leave8">
+        <img src="{{ url_for('static', filename='img/leaves/leave6.svg') }}" alt="" class="right leave leave9">
+        <img src="{{ url_for('static', filename='img/leaves/leave3.svg') }}" alt="" class="right leave leave10">
+    </div>
+
+    <footer>
+        <a href="/home"><img src="{{ url_for('static', filename='img/bar/home.svg') }}" alt=""></a>
+        <a href="/galary"><img src="{{ url_for('static', filename='img/bar/galary.svg') }}" alt=""></a>
+        <a href="/services"><img src="{{ url_for('static', filename='img/bar/services-active.svg') }}" alt=""></a>
+        <a href="/cart"><img src="{{ url_for('static', filename='img/bar/cart.svg') }}" alt=""></a>
+    </footer>
+</body>
+</html>

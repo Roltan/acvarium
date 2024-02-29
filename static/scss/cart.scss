@@ -1,0 +1,102 @@
+@import 'block/_heading.scss';
+@import 'block/_main.scss';
+@import 'block/_bar.scss';
+@import 'block/_cards.scss';
+
+header{
+    position: fixed;
+    top: 0px;
+    
+    display: flex;
+    padding: 40px 10px 10px 10px;
+    height: 104px;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+
+    background: #68A7DD;
+    width: 100%;
+    box-sizing: border-box;
+
+    button{
+        padding: 5px 10px;
+        border-radius: 15px;
+        border: 3px solid #446D91;
+        background: #85DE68;
+
+        color: #446D91;
+        font-size: 20px;
+        font-weight: 700;
+    }
+    button.empty{
+        color: #6085A6;
+        border-color: #6085A6;
+        background: #8BBA7C;
+    }
+    p{
+        color: #446D91;
+        font-size: 20px;
+        text-align: end;
+    }
+    p.empty{
+        display: none;
+    }
+}
+
+@include cards(140px);
+
+.emptyBody{
+    margin-top: 236px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 9px;
+
+    color: #446D91;
+    font-size: 20px;
+
+    a{  
+        color: #446D91;
+        font-size: 20px;
+
+        padding: 4.6px 10.6px;
+
+        border-radius: 15px;
+        border: 3px solid #446D91;
+        background: #85DE68;
+    }
+}
+
+.leaves{
+    .leave1{
+        top: 104px;
+    }
+    .leave2{
+        top: 210px;
+    }
+    .leave3{
+        top: 441px;
+    }
+    .leave4{
+        top: 573px;
+    }
+    .leave5{
+        top: 643px;
+    }
+
+    .leave6{
+        top: 98px;
+    }
+    .leave7{
+        top: 258px;
+    }
+    .leave8{
+        top: 441px;
+    }
+    .leave9{
+        top: 537px;
+    }
+    .leave10{
+        top: 660px;
+    }
+}

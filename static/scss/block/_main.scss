@@ -1,0 +1,42 @@
+@font-face {
+    font-family: Inter;
+    src: url(../fount/Inter/Inter-Regular.otf);
+}
+
+body{
+    height: 100svh;
+    margin: 0;
+
+    background: #EDF5F9;
+    font-family: Inter;
+    font-weight: 700;
+}
+
+a{
+    text-decoration: none;
+}
+p{
+    margin: 0;
+}
+button{
+    border: none;
+    background: none;
+}
+
+.leaves{
+    .left{
+        left: 0px;
+    }
+    .right{
+        right: 0px;
+        transform: scale(-1, 1)
+    }
+    .leave{
+        position: fixed;
+        z-index: 3;
+    }
+}
+
+.none{
+    display: none;
+}

@@ -1,0 +1,51 @@
+@import 'block/_heading.scss';
+@import 'block/_main.scss';
+@import 'block/_bar.scss';
+@import 'block/whiteHeader';
+@import 'block/leavesServices';
+
+@include whiteHeader(123px);
+
+main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 131px 0;
+    align-items: center;
+    gap: 10px;
+
+    &>*{
+        width: 81.53vw;
+        color: #446D91;
+    }
+    .paragraf{
+        font-size: 16px;
+
+        padding: 5px;
+        border-radius: 15px;
+        background: #68A7DD;
+        i{
+            color: #85DE68;
+        }
+    }
+    .head{
+        font-size: 13px;
+        text-align: center;
+    }
+    .img{
+        display: flex;
+        justify-content: space-between;
+    }
+    .ul{
+        font-size: 13px;
+
+        padding: 5px;
+        border-radius: 15px;
+        background: #68A7DD;
+
+        ul{
+            margin: 0;
+            padding-left: 20px;
+        }
+    }
+}

@@ -1,0 +1,50 @@
+@import 'block/_heading.scss';
+@import 'block/_main.scss';
+@import 'block/_bar.scss';
+@import 'block/_cards.scss';
+@import 'block/whiteHeader';
+
+@include whiteHeader(90px);
+
+body{
+    height: auto;
+}
+
+@include cards(100px);
+
+.leaves{
+    .leave1{
+        top: 41px;
+    }
+    .leave2{
+        top: 183px+41px;
+    }
+    .leave3{
+        top: 399px+41px;
+    }
+    .leave4{
+        top: 499px+41px;
+    }
+    .leave5{
+        top: 631px+41px;
+    }
+
+    .leave6{
+        top: 40px+41px;
+    }
+    .leave7{
+        top: 135px+41px;
+    }
+    .leave8{
+        top: 199px+41px;
+    }
+    .leave9{
+        top: 298px+41px;
+    }
+    .leave10{
+        top: 432px+41px;
+    }
+    .leave11{
+        top: 553px+41px;
+    }
+}

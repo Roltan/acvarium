@@ -1,0 +1,26 @@
+@mixin logo($maxwidth, $width){
+    width: $maxwidth;
+    display: flex;
+    justify-content: center;
+
+    .grid{
+        display: grid;
+        width: $width;
+        grid-template-columns: 11fr 20fr;
+        align-items: end;
+        column-gap: 5%;
+
+        div{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 5.6%;
+        }
+        div > img:last-child{
+            padding-right: 7.7%;
+        }
+        img{
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,94 @@
+@font-face {
+  font-family: Inter;
+  src: url(../fount/Inter/Inter-Regular.otf);
+}
+body {
+  height: 100svh;
+  margin: 0;
+  background: #EDF5F9;
+  font-family: Inter;
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+}
+
+button {
+  border: none;
+  background: none;
+}
+
+.leaves .left {
+  left: 0px;
+}
+.leaves .right {
+  right: 0px;
+  transform: scale(-1, 1);
+}
+.leaves .leave {
+  position: fixed;
+  z-index: 3;
+}
+
+.none {
+  display: none;
+}
+
+.heading {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  padding-top: 17%;
+}
+.heading .grid {
+  display: grid;
+  width: 85%;
+  grid-template-columns: 11fr 20fr;
+  align-items: end;
+  -moz-column-gap: 5%;
+       column-gap: 5%;
+}
+.heading .grid div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5.6%;
+}
+.heading .grid div > img:last-child {
+  padding-right: 7.7%;
+}
+.heading .grid img {
+  width: 100%;
+}
+
+.wave {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  height: 50dvh;
+  width: 100vw;
+}
+
+.bools {
+  position: absolute;
+  top: calc(50dvh - 100px);
+  left: 13vw;
+  width: 74%;
+  height: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  z-index: 4;
+}
+.bools .bool {
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  background: #3E3E3D;
+  transition: 300ms;
+}/*# sourceMappingURL=load.css.map */
